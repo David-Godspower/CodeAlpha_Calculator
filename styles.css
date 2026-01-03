@@ -7,13 +7,16 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #121212; /* Dark Background */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Spread them out */
+    align-items: center;    /* Center horizontally */
+    min-height: 100vh;      /* Full screen height */
+    background-color: #121212;
+    padding-top: 50px;      /* Space at top */
 }
 
 .calculator {
+    margin: auto;
     background: #1e1e1e;
     padding: 20px;
     border-radius: 20px;
@@ -79,4 +82,80 @@ button:hover {
     grid-column: span 2;
     width: 100%;
     border-radius: 40px;
+}
+
+
+
+footer{
+    position: relative; /* No more absolute positioning */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #121212; /* Matches background so it looks clean */
+    margin-top: 20px; /* Space between calc and footer */
+   
+    bottom: 0;
+    left:0;
+    position:relative;
+    width:100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+footer p{
+      font-size: 20px;
+}
+.icons{
+    font-size: 20px;
+    color: #fff;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color:#ff9f43;
+    font-size: 24px;
+}
+#linkedin:hover{
+    color:blue;
+}
+
+#x:hover{
+    color:black;
+}
+#facebook:hover{
+    color:blue;
+}
+#github:hover{
+    color:#4078c0 ;
+}
+#gmail:hover{
+    color: red;
+}
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;        /* White icons by default */
+    font-size: 1.2rem;
+    margin: 0 10px;     /* Space between icons */
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #26c6da;     /* Turns Cyan on hover (Matches calculator buttons) */
+    transform: scale(1.2); /* Slight zoom effect */
 }
