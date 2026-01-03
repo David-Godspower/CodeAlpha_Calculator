@@ -26,3 +26,5 @@ function calculateResult() {
         setTimeout(() => display.value = "", 1500); // Clear error after 1.5s
     }
 }
+
+document.getElementById("year").textContent = new Date().getFullYear();
